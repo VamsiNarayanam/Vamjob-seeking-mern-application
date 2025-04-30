@@ -35,8 +35,8 @@ const HeroSection = () => {
           <div className="title">
             <h2>Find Your Dream Job </h2>
             <p>
-            Unlock exciting new career opportunities tailored to your unique skills, 
-            passions, and long-term goals.we are here to guide you every step of the way. Take charge of your future, explore diverse industries, and discover where your true potential can lead you!
+              Unlock exciting new career opportunities tailored to your unique skills,
+              passions, and long-term goals.we are here to guide you every step of the way. Take charge of your future, explore diverse industries, and discover where your true potential can lead you!
             </p>
           </div>
           <div className="image">

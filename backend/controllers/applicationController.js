@@ -29,9 +29,8 @@ export const postApplication = catchAsyncErrors(async (req, res, next) => {
     return next(new ErrorHandler("Invalid file type. Please upload a valid resume format (PNG, JPEG, WebP, or PDF).", 400));
   }
 
-  // Upload file to Cloudinary
   const cloudinaryResponse = await cloudinary.uploader.upload(resume.tempFilePath, {
-    folder: "resumes", 
+    folder: "resumes",
   });
 
   if (!cloudinaryResponse || cloudinaryResponse.error) {

@@ -14,22 +14,22 @@ const HowItWorks = () => {
               <FaUserPlus />
               <p>Create Account</p>
               <p>
-              Welcome! Please fill out the form to create your account and join our community.
+                Welcome! Please fill out the form to create your account and join our community.
               </p>
             </div>
             <div className="card">
               <MdFindInPage />
               <p>Find a Job/Post a Job</p>
               <p>
-              Explore exciting job opportunities or share your job openings with us.
+                Explore exciting job opportunities or share your job openings with us.
               </p>
             </div>
             <div className="card">
               <IoMdSend />
               <p>Apply For Job/Recruit Suitable Candidates</p>
               <p>
-              Take the next step in your career by applying for positions that match your skills, 
-              or find the perfect candidates to fill your job openings.
+                Take the next step in your career by applying for positions that match your skills,
+                or find the perfect candidates to fill your job openings.
               </p>
             </div>
           </div>

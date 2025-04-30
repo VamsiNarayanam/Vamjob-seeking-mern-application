@@ -34,24 +34,24 @@ const PostJob = () => {
         "http://localhost:4000/api/v1/job/post",
         fixedSalary.length >= 4
           ? {
-              title,
-              description,
-              category,
-              country,
-              city,
-              location,
-              fixedSalary,
-            }
+            title,
+            description,
+            category,
+            country,
+            city,
+            location,
+            fixedSalary,
+          }
           : {
-              title,
-              description,
-              category,
-              country,
-              city,
-              location,
-              salaryFrom,
-              salaryTo,
-            },
+            title,
+            description,
+            category,
+            country,
+            city,
+            location,
+            salaryFrom,
+            salaryTo,
+          },
         {
           withCredentials: true,
           headers: {
@@ -90,35 +90,35 @@ const PostJob = () => {
                 onChange={(e) => setCategory(e.target.value)}
               >
                 <option value="UI/UX Design">
-                            UI/UX Design
-                            </option>
-                            <option value="Mobile App Development">
-                              Mobile App Development
-                            </option>
-                            <option value="Frontend Web Development">
-                              Frontend Web Development
-                            </option>
-                            <option value="Backend Web Development">
-                            Backend Web Development
-                            </option>
-                            <option value="Account & Finance">
-                              Account & Finance
-                            </option>
-                            <option value="Artificial Intelligence">
-                              Artificial Intelligence
-                            </option>
-                            <option value="Digital Marketing">
-                            Digital Marketing
-                            </option>
-                            <option value="MERN Stack Development">
-                            MERN Stack Development
-                            </option>
-                            <option value="Data Science">
-                              Data Science
-                            </option>
-                            <option value="Cyber Security">
-                              Cyber Security
-                            </option>
+                  UI/UX Design
+                </option>
+                <option value="Mobile App Development">
+                  Mobile App Development
+                </option>
+                <option value="Frontend Web Development">
+                  Frontend Web Development
+                </option>
+                <option value="Backend Web Development">
+                  Backend Web Development
+                </option>
+                <option value="Account & Finance">
+                  Account & Finance
+                </option>
+                <option value="Artificial Intelligence">
+                  Artificial Intelligence
+                </option>
+                <option value="Digital Marketing">
+                  Digital Marketing
+                </option>
+                <option value="MERN Stack Development">
+                  MERN Stack Development
+                </option>
+                <option value="Data Science">
+                  Data Science
+                </option>
+                <option value="Cyber Security">
+                  Cyber Security
+                </option>
               </select>
             </div>
             <div className="wrapper">

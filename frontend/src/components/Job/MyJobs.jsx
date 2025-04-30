@@ -12,7 +12,7 @@ const MyJobs = () => {
   const { isAuthorized, user } = useContext(Context);
 
   const navigateTo = useNavigate();
-  //Fetching all jobs
+
   useEffect(() => {
     const fetchJobs = async () => {
       try {
@@ -32,18 +32,16 @@ const MyJobs = () => {
     navigateTo("/");
   }
 
-  //Function For Enabling Editing Mode
   const handleEnableEdit = (jobId) => {
-    //Here We Are Giving Id in setEditingMode because We want to enable only that job whose ID has been send.
+
     setEditingMode(jobId);
   };
 
-  //Function For Disabling Editing Mode
   const handleDisableEdit = () => {
     setEditingMode(null);
   };
 
-  //Function For Updating The Job
+
   const handleUpdateJob = async (jobId) => {
     const updatedJob = myJobs.find((job) => job._id === jobId);
     await axios
@@ -59,7 +57,6 @@ const MyJobs = () => {
       });
   };
 
-  //Function For Deleting Job
   const handleDeleteJob = async (jobId) => {
     await axios
       .delete(`http://localhost:4000/api/v1/job/delete/${jobId}`, {
@@ -75,7 +72,7 @@ const MyJobs = () => {
   };
 
   const handleInputChange = (jobId, field, value) => {
-    // Update the job object in the jobs state with the new value
+
     setMyJobs((prevJobs) =>
       prevJobs.map((job) =>
         job._id === jobId ? { ...job, [field]: value } : job
@@ -163,7 +160,7 @@ const MyJobs = () => {
                             }
                           >
                             <option value="UI/UX Design">
-                            UI/UX Design
+                              UI/UX Design
                             </option>
                             <option value="Mobile App Development">
                               Mobile App Development
@@ -172,7 +169,7 @@ const MyJobs = () => {
                               Frontend Web Development
                             </option>
                             <option value="Backend Web Development">
-                            Backend Web Development
+                              Backend Web Development
                             </option>
                             <option value="Account & Finance">
                               Account & Finance
@@ -181,10 +178,10 @@ const MyJobs = () => {
                               Artificial Intelligence
                             </option>
                             <option value="Digital Marketing">
-                            Digital Marketing
+                              Digital Marketing
                             </option>
                             <option value="MERN Stack Development">
-                            MERN Stack Development
+                              MERN Stack Development
                             </option>
                             <option value="Data Science">
                               Data Science

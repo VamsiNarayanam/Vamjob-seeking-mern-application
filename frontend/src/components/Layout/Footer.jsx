@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Context } from "../../main";
 import { Link } from "react-router-dom";
-import { FaFacebookF, FaLinkedin,FaGithub } from "react-icons/fa";
+import { FaFacebookF, FaLinkedin, FaGithub } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 
 const Footer = () => {
